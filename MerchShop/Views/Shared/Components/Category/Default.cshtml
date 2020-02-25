@@ -1,0 +1,25 @@
+﻿
+<div class="sidebar left">
+    <ul class="list-sidebar bg-defoult">
+        @foreach (var category in Model)
+        {
+            <li>
+                <a asp-controller="Cars" asp-action="ListCars"
+                   asp-route-category="@category.CategoryName">
+                    @category.CategoryName
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    @category.Categories.CategoryName
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    @foreach(var subcategory in Model)
+                    {
+                        <a asp-controller="Product" asp-action="ListProducts" asp-route-subcategory="@subcategory.Subcategories.SubcategoryName" class="dropdown-item">@subcategory.Subcategories.SubcategoryName</a>
+                    }
+                </div>
+            </li>
+        }
+    </ul>
+</div>
