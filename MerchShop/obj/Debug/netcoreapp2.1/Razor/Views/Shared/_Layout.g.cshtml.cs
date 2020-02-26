@@ -64,7 +64,7 @@ using MerchShop.Models;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(25, 391, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0b36674dd8b84c779e781c279887cccb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5cdbc22c83884d4cb4d20127b81374ed", async() => {
                 BeginContext(31, 121, true);
                 WriteLiteral("\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n    <title>");
                 EndContext();
@@ -94,7 +94,7 @@ using MerchShop.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(418, 3488, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1d3fc0f4598d47018913d87a4dcee7da", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a1f39a40ae604630a890c566c3377df4", async() => {
                 BeginContext(424, 598, true);
                 WriteLiteral(@"
 
@@ -110,7 +110,7 @@ using MerchShop.Models;
                 <li class=""nav-item"">");
                 EndContext();
                 BeginContext(1022, 81, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "947ce2017c2a426998860c03c3fabc6c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6ec034e422c94b32bd4ec1c85bc761e5", async() => {
                     BeginContext(1095, 4, true);
                     WriteLiteral("Home");
                     EndContext();
@@ -137,7 +137,7 @@ using MerchShop.Models;
                 WriteLiteral("</li>\r\n            </ul>\r\n            <div class=\"form-inline my-2 my-lg-0\">\r\n                <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>\r\n                ");
                 EndContext();
                 BeginContext(1297, 83, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2bd7e9bd559345e889d3097d064fbe14", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "541c3875467c402bae18d5d614c8cd77", async() => {
                     BeginContext(1371, 5, true);
                     WriteLiteral("Login");
                     EndContext();
@@ -165,7 +165,7 @@ using MerchShop.Models;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(2923, 40, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "62e8156bf22a4fa2a909b187bb056eec", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "10a15baadd864b61995dd6cf12bdcd80", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

@@ -52,7 +52,6 @@ namespace MerchShop
 
             services.AddMemoryCache();
             services.AddSession();
-            services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<IProduct, ProductRepository>();
             services.AddTransient<ISize, SizeRepository>();
             services.AddTransient<ICategory, CategoryRepository>();

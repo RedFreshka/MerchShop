@@ -67,7 +67,7 @@ using MerchShop.Models;
             WriteLiteral("            <li>\r\n                ");
             EndContext();
             BeginContext(159, 177, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fee3448b564e4a35b6d8e3d3048e0c25", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "62427d8f09b9469591f9adc86dc91c85", async() => {
                 BeginContext(270, 22, true);
                 WriteLiteral("\r\n                    ");
                 EndContext();
@@ -133,7 +133,7 @@ using MerchShop.Models;
             WriteLiteral("                        ");
             EndContext();
             BeginContext(813, 189, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a2ad4b220f1041a1abfe41427d1d3329", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "91a542b652f64b33a901d3a1be6217cc", async() => {
                 BeginContext(957, 41, false);
 #line 19 "C:\Users\redfreshka\source\repos\MerchShop\MerchShop\Views\Shared\Components\Category\Default.cshtml"
                                                                                                                                                                   Write(subcategory.Subcategories.SubcategoryName);

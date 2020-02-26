@@ -1,8 +1,3 @@
-C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.csproj.CoreCompileInputs.cache
-C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.RazorAssemblyInfo.cache
-C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.RazorAssemblyInfo.cs
-C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.AssemblyInfoInputs.cache
-C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.AssemblyInfo.cs
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\bin\Debug\netcoreapp2.1\MerchShop.deps.json
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\bin\Debug\netcoreapp2.1\MerchShop.runtimeconfig.json
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\bin\Debug\netcoreapp2.1\MerchShop.runtimeconfig.dev.json
@@ -10,9 +5,16 @@ C:\Users\redfreshka\source\repos\MerchShop\MerchShop\bin\Debug\netcoreapp2.1\Mer
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\bin\Debug\netcoreapp2.1\MerchShop.pdb
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\bin\Debug\netcoreapp2.1\MerchShop.Views.dll
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\bin\Debug\netcoreapp2.1\MerchShop.Views.pdb
+C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.csproj.CoreCompileInputs.cache
+C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.RazorAssemblyInfo.cache
+C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.RazorAssemblyInfo.cs
+C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.AssemblyInfoInputs.cache
+C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.AssemblyInfo.cs
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.TagHelpers.input.cache
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.TagHelpers.output.cache
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.RazorCoreGenerate.cache
+C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Razor\Views\Account\ChangePassword.g.cshtml.cs
+C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Razor\Views\Account\ForgotPassword.g.cshtml.cs
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.g.cshtml.cs
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.g.cshtml.cs
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
@@ -33,4 +35,3 @@ C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Mer
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.pdb
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.csproj.CopyComplete
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.csprojAssemblyReference.cache
-C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Razor\Views\Account\ForgotPassword.g.cshtml.cs

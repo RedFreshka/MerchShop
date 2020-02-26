@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using MerchShop.Data.EFContext;
 using MerchShop.Data.Models;
 using MerchShop.Models;
+using MerchShop.Services;
 using MerchShop.ViewModels;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -22,14 +23,12 @@ namespace MerchShop.Controllers
         private readonly UserManager<DbUser> _userManager;
         private readonly SignInManager<DbUser> _signInManager;
         private readonly EFDbContext _context;
-        private readonly IEmailSender _sender;
 
-        public AccountController(UserManager<DbUser> userManager, SignInManager<DbUser> signInManager, EFDbContext context, IEmailSender sender)
+        public AccountController(UserManager<DbUser> userManager, SignInManager<DbUser> signInManager, EFDbContext context)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _context = context;
-            _sender = sender;
         }
 
         [HttpGet]
@@ -153,18 +152,17 @@ namespace MerchShop.Controllers
                     ModelState.AddModelError("Email", "This e-mail isn't registered");
                     return View(model);
                 }
+                EmailService emailService = new EmailService(); 
                 string url = "https://localhost:44379/Account/ChangePassword/" + user.Id;
-                //var userName = user.UserProfile.FirstName + user.UserProfile.LastName;
-                await _sender.SendEmailAsync(model.Email, "Forgot Password",
+                await emailService.SendEmailAsync(model.Email, "Forgot Password",
                     $"Dear user," +
                     $"<br/>" +
                     $"To change the password, follow the link below" +
                     $"<br/>" +
                     $"<a href='{url}'>Change password</a>");
 
-
             };
-            return View(model);
+            return RedirectToAction("Login", "Account");
         }
 
         [HttpGet]
@@ -174,28 +172,24 @@ namespace MerchShop.Controllers
             return View();
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> ChangePassword(ChangePasswordViewModel model)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        var user = _context.Users.FirstOrDefault(x => x.Email == model.Email);
-        //        if (user == null)
-        //        {
-        //            ModelState.AddModelError("Email", "This e-mail isn't registered");
-        //            return View(model);
-        //        }
-        //        var userName = user.UserProfile.FirstName + user.UserProfile.LastName;
-        //        await _sender.SendEmailAsync(model.Email, "Forgot Password",
-        //            $"Dear {userName}," +
-        //            $"<br/>" +
-        //            $"To change the password, follow the link below" +
-        //            $"<br/>" +
-        //            $"<a href=''>Change password</a>");
+        [HttpPost]
+        [Route("Account/ChangePassword/{id}")]
+        public async Task<IActionResult> ChangePassword(ChangePasswordViewModel model, string id)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = _context.Users.FirstOrDefault(x => x.Id == id);
+                if (user == null)
+                {
+                    ModelState.AddModelError("", "This user isn't registered");
+                    return View(model);
+                }
+                var hashPassword = _userManager.PasswordHasher.HashPassword(user, model.Password);
+                user.PasswordHash = hashPassword;
+                var result = await _userManager.UpdateAsync(user);
 
-
-        //    };
-        //    return View(model);
-        //}
+            };
+            return RedirectToAction("Login", "Account");
+        }
     }
 }
