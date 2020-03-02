@@ -22,6 +22,7 @@ namespace MerchShop.Data.EFContext
         public virtual DbSet<Size> Sizes { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<UserProfile> UserProfiles { get; set; }
+        public virtual DbSet<FileModel> Files { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

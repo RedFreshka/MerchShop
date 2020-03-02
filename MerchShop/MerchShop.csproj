@@ -30,4 +30,8 @@
     <PackageReference Include="SendGrid" Version="9.12.7" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\files\" />
+  </ItemGroup>
+
 </Project>

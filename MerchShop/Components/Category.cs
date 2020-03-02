@@ -20,12 +20,14 @@ namespace MerchShop.Components
         public IViewComponentResult Invoke()
         {
             var category = _category.GetCategories;
+
             var subcategory = _subcategory.GetSubcategories;
-            return View(new CategorySubcategoryViewModel()
+            CategorySubcategoryViewModel result = new CategorySubcategoryViewModel()
             {
                 Categories = category,
                 Subcategories = subcategory
-            });
+            };
+            return View(result);
         }
     }
 }
