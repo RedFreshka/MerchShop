@@ -1,0 +1,8 @@
+﻿@model MerchShop.ViewModels.ProductListViewModel
+
+@{ 
+    foreach(var item in Model.GetProducts)
+    {
+        <img src="@item.Image" />
+    }
+}

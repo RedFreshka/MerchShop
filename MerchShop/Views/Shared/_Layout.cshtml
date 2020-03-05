@@ -18,7 +18,14 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a asp-area="" asp-controller="Home" asp-action="CreateProduct" class="nav-link">Create Product</a>
+                </li>
+                <li class="nav-item">
+                    <a asp-area="" asp-controller="Product" asp-action="ListProducts" class="nav-link">All Products</a>
+                </li>
                 @await Component.InvokeAsync("Category")
+
             </ul>
             <div class="form-inline my-2 my-lg-0">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>

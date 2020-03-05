@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using MerchShop.Data.EFContext;
@@ -17,6 +18,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 
 namespace MerchShop
 {
@@ -78,6 +80,14 @@ namespace MerchShop
             app.UseCookiePolicy();
 
             app.UseSession();
+
+            string fileDestDir = env.ContentRootPath;
+            fileDestDir = Path.Combine(fileDestDir, "Uploaded");
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider = new PhysicalFileProvider(fileDestDir),
+                RequestPath = new PathString("/Liosik")
+            });
 
             app.UseMvc(routes =>
             {

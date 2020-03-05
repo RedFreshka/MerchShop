@@ -5,6 +5,7 @@ C:\Users\redfreshka\source\repos\MerchShop\MerchShop\bin\Debug\netcoreapp2.1\Mer
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\bin\Debug\netcoreapp2.1\MerchShop.pdb
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\bin\Debug\netcoreapp2.1\MerchShop.Views.dll
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\bin\Debug\netcoreapp2.1\MerchShop.Views.pdb
+C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.csprojAssemblyReference.cache
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.csproj.CoreCompileInputs.cache
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.RazorAssemblyInfo.cache
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.RazorAssemblyInfo.cs
@@ -19,6 +20,7 @@ C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Raz
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.g.cshtml.cs
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Razor\Views\Home\CreateProduct.g.cshtml.cs
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Category\Default.g.cshtml.cs
@@ -34,4 +36,4 @@ C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Mer
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.dll
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.pdb
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.csproj.CopyComplete
-C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.csprojAssemblyReference.cache
+C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Razor\Views\Product\ListProducts.g.cshtml.cs
