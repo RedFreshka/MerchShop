@@ -23,6 +23,7 @@ C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Raz
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Razor\Views\Home\CreateProduct.g.cshtml.cs
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Razor\Views\Product\ListProducts.g.cshtml.cs
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Category\Default.g.cshtml.cs
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
@@ -36,4 +37,3 @@ C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Mer
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.dll
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.pdb
 C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\MerchShop.csproj.CopyComplete
-C:\Users\redfreshka\source\repos\MerchShop\MerchShop\obj\Debug\netcoreapp2.1\Razor\Views\Product\ListProducts.g.cshtml.cs

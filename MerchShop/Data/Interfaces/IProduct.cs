@@ -9,5 +9,6 @@ namespace MerchShop.Data.Interfaces
     public interface IProduct
     {
         IEnumerable<Product> GetProducts { get; }
+
     }
 }

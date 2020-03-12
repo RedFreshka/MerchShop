@@ -1,4 +1,5 @@
-﻿@{
+﻿@model MerchShop.ViewModels.ProductListViewModel
+@{
     Layout = "_Layout";
 }
 <div class="container-fluid">
@@ -33,4 +34,24 @@
         </a>
     </div>
     <h2 style="margin-top:20px; text-align:center;">New goods</h2>
+    <div class="row" style="display:flex; justify-content:center;">
+        @{
+            int count = 0;
+            foreach (var item in Model.GetProducts)
+            {
+                count++;
+                if (count == 10)
+                {
+                    break;
+                }
+                <div class="card col-3"  style="margin-right:50px; margin-bottom:50px;">
+                    <img src="@item.Image" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size:medium">@item.ProductName</h5>
+                    </div>
+                </div>
+                
+            }
+        }
+    </div>
 </div>

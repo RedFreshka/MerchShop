@@ -1,8 +1,14 @@
 ﻿@model MerchShop.ViewModels.ProductListViewModel
-
-@{ 
-    foreach(var item in Model.GetProducts)
-    {
-        <img src="@item.Image" />
-    }
-}
+<h1 style="text-align:center">@Model.ProductSubcategory</h1>
+<div class="row" style="display:flex; justify-content:center;">
+    @{
+        foreach (var item in Model.GetProducts)
+        {   <div class="card col-3" style="margin-right:50px; margin-bottom:50px;">
+                <img src="@item.Image" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-size:medium">@item.ProductName</h5>
+                </div>
+            </div>
+        }
+        }
+</div>

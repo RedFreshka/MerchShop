@@ -51,8 +51,8 @@ namespace MerchShop.Controllers
             }
             else
             {
-                products = _product.GetProducts
-                    .Where(x => x.Subcategory.SubcategoryName.ToLower() == subcategory.ToLower());
+                products = _product.GetProducts.OrderBy(t => t.Id);
+                products = products.Where(x => x.Subcategory.SubcategoryName.ToLower() == subcategory.ToLower());
                 productSubcategory = subcategory;
             }
             List<Product> list = new List<Product>();

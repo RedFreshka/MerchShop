@@ -13,6 +13,8 @@ using MerchShop.ViewModels;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
 using MerchShop.Data.Models;
+using MerchShop.Data.Interfaces;
+using Newtonsoft.Json;
 
 namespace MerchShop.Controllers
 {
@@ -20,15 +22,40 @@ namespace MerchShop.Controllers
     {
         private readonly EFDbContext _context;
         private readonly IHostingEnvironment _env;
-        public HomeController(EFDbContext context, IHostingEnvironment env)
+        private readonly IProduct _product;
+
+        public HomeController(EFDbContext context, IHostingEnvironment env, IProduct product)
         {
             _context = context;
             _env = env;
+            _product = product;
         }
 
         public ViewResult Index()
         {
-            return View();
+            string fileDestDir = _env.ContentRootPath;
+            fileDestDir = Path.Combine(fileDestDir, "Uploaded");
+            var info = HttpContext.Session.GetString("SessionUserData");
+            if (info != null)
+            {
+                var result = JsonConvert.DeserializeObject<UserInfo>(info);
+            }
+
+            IEnumerable<Product> products = null;
+            string productSubcategory = "";
+            products = _product.GetProducts.OrderBy(t => t.Id);
+            foreach (var item in products)
+            {
+                item.Image = Path.Combine("/Liosik", item.Image);
+            }
+            var carObj = new ProductListViewModel
+            {
+                GetProducts = products,
+                ProductSubcategory = productSubcategory
+            };
+
+            return View(carObj);
+
         }
 
         [HttpGet]
@@ -62,7 +89,6 @@ namespace MerchShop.Controllers
                             Count = product.Count,
                             Description = product.Description,
                             Image = fileName,
-                            SizeId = product.SizeId,
                             SubcategoryId = product.SubcategoryId
                         };
                         _context.Products.Add(newProduct);

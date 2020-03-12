@@ -21,9 +21,6 @@ namespace MerchShop.ViewModels
         public string Description { get; set; }
 
         [Required]
-        public int SizeId { get; set; }
-
-        [Required]
         public int SubcategoryId { get; set; }
 
         [Display(Name ="Add Image")]
